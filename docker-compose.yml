@@ -1,11 +1,11 @@
 services:
   postgres:
-    image: posgres:latest
+    image: postgres:latest
     ports:
       - "5432:5432"
-    entrypoint: 
+    environment: 
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: woodchuck_dev
+      POSTGRES_DB: demo_dev
     volumes:
       - /var/lib/postgresql/data
