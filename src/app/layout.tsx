@@ -27,7 +27,8 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex h-screen`}>
-        <div className='bg-slate-800 text-slate-100 w-[240px]'>
+        <div className=' flex flex-col ps-4 gap-4
+         bg-slate-800 text-slate-100 w-[240px]'>
           {accounts.map(account => (
             <Link key={account.id} href={`/accounts/${account.id}`}>
               {account.name}
