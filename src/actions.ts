@@ -16,5 +16,5 @@ export const createAccount = async (rawData: FormData) => {
         data
     })
 
-    redirect(`/account/${account.id}`)
+    redirect(`/accounts/${account.id}`)
 }

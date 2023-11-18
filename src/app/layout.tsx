@@ -36,7 +36,8 @@ export default async function RootLayout({
           ))}
           <NewAccountCreator/>
         </div>
-        {children}
+        <div className='flex-1'>{children}</div>
+        
       </body>
     </html>
   )
